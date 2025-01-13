@@ -2,6 +2,8 @@
 
 Una aplicación web moderna construida con backend en Flask, frontend en React y base de datos PostgreSQL, todo containerizado con Docker.
 
+![Aplicación challenge](https://i.imgur.com/gfxrkyn.png)
+
 ## 📋 Características
 
 -   API REST con Flask en el backend
@@ -76,10 +78,11 @@ pytest
 
 ```
 .
-├── backend/                # Aplicación Flask
+├── backend/               # Aplicación Flask
+│   ├── models/            # Tabla Article
+│   ├── schemas/           # Modelos para validar datos de entrada y salida
 │   ├── tests/             # Pruebas automatizadas
 │   ├── app.py             # Punto de entrada de la aplicación
-│   ├── swagger/           # Documentación del API
 │   └── requirements.txt   # Dependencias de Python
 ├── frontend/              # Aplicación React
 ├── docker-compose.yml     # Configuración de Docker compose
